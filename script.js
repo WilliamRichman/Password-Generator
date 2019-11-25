@@ -7,4 +7,4 @@
 function getlower() {
     return String.fromCharCode()
 }
-console.log(string.fromCharCode(97))
+console.log(Math.random() * 26);
