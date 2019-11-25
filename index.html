@@ -12,30 +12,45 @@
 
 
 <body>
+
+
+    <header>
+        <h1>Password Generator</h1>
+    </header>
+    <h2>Generate a Password</h2>
+    <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+    <button id="generate">Generate Password</button>
+    <button id="copy">
+        Copy to Clipboard
+    </button>
+
     <script>
 
-        const map = ['east', 'west', 'north', 'south']
 
-        for (i = 0; i < map.length; i++) {
-            console.log("These are the sides of the map " + map[i]);
-        }
 
         const alph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
         const spc = ['!', '@', '#', '$', '%', '&', '?']
 
-        for (var i = 1; i < 10; i++) {
+        for (var i = 1; i < 2; i++) {
             var num = Math.floor(Math.random() * 100);
             console.log(num);
         }
 
-        for (i = 0; i < alph.length; i++) {
-            console.log(alph[i]);
-        }
+        /*         for (i = 0; i < alph.length; i++) {
+                    console.log(alph[i]);
+                }
+        
+                for (i = 0; i < spc.length; i++) {
+                    console.log(spc[i]);
+                } */
 
-        for (i = 0; i < spc.length; i++) {
-            console.log(spc[i]);
-        }
+        var alphrand = alph[Math.floor(Math.random() * alph.length)];
+        var spcrand = spc[Math.floor(Math.random() * spc.length)];
+
+        console.log(alphrand + spcrand + num);
+
+
 
     </script>
 </body>
