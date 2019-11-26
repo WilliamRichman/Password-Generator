@@ -8,4 +8,16 @@
 function getlower() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
-console.log(getlower);
+
+
+function getupper() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+
+
+function getnumber() {
+    return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+}
+
+
+console.log(getnumber());
