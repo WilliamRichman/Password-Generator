@@ -15,3 +15,17 @@ function generate() {
     //add password to text box
     document.getElementById('display').value = password;
 }
+
+//set default length to 8
+document.getElementById('length').innerHTML = "Length: 25";
+
+
+//function to set length to slider inbox
+document.getElementById('inbox').oninput = function () {
+    if (document.getElementById('inbox').value > 0) {
+        document.getElementById("length").innerHTML = "Length: " + document.getElementById("inbox").value;
+    }
+    else {
+        document.getElementById("Length").innerHTML = "Length: 1";
+    }
+}
