@@ -29,3 +29,10 @@ document.getElementById('inbox').oninput = function () {
         document.getElementById("Length").innerHTML = "Length: 1";
     }
 }
+
+//copy to clipboard 
+function clip() {
+    document.getElementById("display").select();
+    document.execCommand("Copy");
+    alert("Copied to Clipboard Asshole ")
+}
