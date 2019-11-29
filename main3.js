@@ -17,7 +17,7 @@ function generate() {
 }
 
 //set default length to 8
-document.getElementById('length').innerHTML = "Length: 25";
+document.getElementById('length').innerHTML = "Enter: Length";
 
 
 //function to set length to slider inbox
